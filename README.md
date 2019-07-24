@@ -13,9 +13,11 @@ Android：因为我不熟悉android开发，而且没有android测试机，暂�
 forked from official plugin image_picker and add saver function to save image to photo gallery.
 
 ## Installation
+```
   flutter_image_picker_saver:
     git: 
       url: "https://github.com/wbtvc/flutter_image_picker_saver.git"
+```
  
 ### Save image Example
 ``` dart
