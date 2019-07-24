@@ -1,4 +1,4 @@
-#forked自https://github.com/cnhefang/image_picker_saver，修复一些bug
+# forked自https://github.com/cnhefang/image_picker_saver，修复一些bug
 目前我只用到保存到相册功能，发现原版以下bug:
 1. iOS：当保存图像到相册没有相册权限时，原版居然没有没有返回result给flutter，导致flutter中的await永远等待，真是太愚蠢了。
 Android：因为我不熟悉android开发，而且没有android测试机，暂时还不知道有没问题。
