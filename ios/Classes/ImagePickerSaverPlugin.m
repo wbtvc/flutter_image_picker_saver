@@ -113,8 +113,10 @@ static const int SOURCE_GALLERY = 1;
         PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
         if (status == PHAuthorizationStatusRestricted) {
             NSLog(@"not allow to access photo library");
+            _result(@"");
         } else if (status == PHAuthorizationStatusDenied) { // if user chosen"Not Allow"
-            NSLog(@"提Remind users to go to [Settings - Privacy - Photo - xxx] to open the access switch");
+            NSLog(@"Remind users to go to [Settings - Privacy - Photo - xxx] to open the access switch");
+            _result(@"");
         } else if (status == PHAuthorizationStatusAuthorized) { // if user chosen"Allow"
             [self saveImage:image];
         } else if (status == PHAuthorizationStatusNotDetermined) { // if user not chosen before
@@ -123,6 +125,8 @@ static const int SOURCE_GALLERY = 1;
                 if (status == PHAuthorizationStatusAuthorized) { //  if user  chosen "Allow"
                     //Save Image to Directory
                     [self saveImage:image];
+                }else{
+                    _result(@"");
                 }
             }];
         }

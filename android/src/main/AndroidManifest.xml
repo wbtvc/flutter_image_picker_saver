@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.flutter.plugins.imagepickersaver">
+    package="io.flutter.plugins.flutterimagepickersaver">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -7,7 +7,7 @@
 
     <application>
         <provider
-            android:name="io.flutter.plugins.imagepickersaver.ImagePickerFileProvider"
+            android:name="io.flutter.plugins.flutterimagepickersaver.ImagePickerFileProvider"
             android:authorities="${applicationId}.flutter.image_provider"
             android:exported="false"
             android:grantUriPermissions="true">

@@ -1,5 +1,10 @@
-# Image Picker and Saver plugin for Flutter
-[![pub package](https://img.shields.io/pub/v/image_picker_saver.svg)](https://pub.dartlang.org/packages/image_picker_saver)
+#forked自https://github.com/cnhefang/image_picker_saver，修复一些bug
+目前我只用到保存到相册功能，发现原版以下bug:
+1. iOS：当保存图像到相册没有相册权限时，原版居然没有没有返回result给flutter，导致flutter中的await永远等待，真是太愚蠢了。
+Android：因为我不熟悉android开发，而且没有android测试机，暂时还不知道有没问题。
+
+
+# Flutter Image Picker and Saver plugin for Flutter
 
   Android supported
 
@@ -8,8 +13,9 @@
 forked from official plugin image_picker and add saver function to save image to photo gallery.
 
 ## Installation
-click the pub version icon to read hwo to install this plugin.
-
+  flutter_image_picker_saver:
+    git: 
+      url: "https://github.com/wbtvc/flutter_image_picker_saver.git"
 
 ### Save image Example
 ``` dart
@@ -31,21 +37,6 @@ click the pub version icon to read hwo to install this plugin.
     }
 
 ```
-
-#---- The following is the official plugin description ---
-
-# Image Picker plugin for Flutter
-
-[![pub package](https://img.shields.io/pub/v/image_picker.svg)](https://pub.dartlang.org/packages/image_picker)
-
-A Flutter plugin for iOS and Android for picking images from the image library,
-and taking new pictures with the camera.
-
-*Note*: This plugin is still under development, and some APIs might not be available yet. [Feedback welcome](https://github.com/flutter/flutter/issues) and [Pull Requests](https://github.com/flutter/plugins/pulls) are most welcome!
-
-## Installation
-
-First, add `image_picker` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
 ### iOS
 

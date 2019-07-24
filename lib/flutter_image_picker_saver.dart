@@ -10,7 +10,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 /// Specifies the source where the picked image should come from.
-enum ImageSource {
+enum FlutterImageSource {
   /// Opens up the device camera, letting the user to take a new picture.
   camera,
 
@@ -18,7 +18,7 @@ enum ImageSource {
   gallery,
 }
 
-class ImagePickerSaver {
+class FlutterImagePickerSaver {
   static const MethodChannel _channel =
       MethodChannel('plugins.flutter.io/image_picker_saver');
 
@@ -31,7 +31,7 @@ class ImagePickerSaver {
   /// [maxHeight] tall. Otherwise the image will be returned at it's
   /// original width and height.
   static Future<File> pickImage({
-    @required ImageSource source,
+    @required FlutterImageSource source,
     double maxWidth,
     double maxHeight,
   }) async {
@@ -58,7 +58,7 @@ class ImagePickerSaver {
   }
 
   static Future<File> pickVideo({
-    @required ImageSource source,
+    @required FlutterImageSource source,
   }) async {
     assert(source != null);
 

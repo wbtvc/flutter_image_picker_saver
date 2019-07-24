@@ -1,3 +1,8 @@
+wbtvc:
+## 0.0.1
+Fix iOS save photo never return when not authorized.
+
+---
 ## 0.3.0
 * **Breaking change** Migrate to AndroidX on android support library. 
 If you are using the android support library and you want to use that version, you should migrate to Androidx your project. 

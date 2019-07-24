@@ -1,4 +1,4 @@
-name: image_picker_saver
+name: flutter_image_picker_saver
 description:
   Image Picker and Saver plugin for Flutter
   Android X supported
@@ -7,11 +7,12 @@ description:
   and add saver to save image to gallery
 
 authors:
-  - Aaron Ho <cnhefang@gmail.com>
+  - Base authors: Aaron Ho <cnhefang@gmail.com>
+  - wbtvc <89069127@qq.com>
 
-homepage: https://github.com/cnhefang/image_picker_saver
-version: 0.3.0
-
+homepage: https://github.com/wbtvc/flutter_image_picker_saver
+version: 0.0.1
+ 
 flutter:
   plugin:
     androidPackage: io.flutter.plugins.imagepickersaver
@@ -27,5 +28,7 @@ dev_dependencies:
     sdk: flutter
 
 environment:
-  sdk: ">=2.0.0-dev.28.0 <3.0.0"
-  flutter: ">=0.1.4 <2.0.0"
+  sdk: ">=2.0.0-dev.28.0"
+  flutter: ">=0.1.4"
+  # sdk: ">=2.0.0-dev.28.0 <3.0.0"
+  # flutter: ">=0.1.4 <2.0.0"
